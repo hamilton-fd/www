@@ -1,241 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Hamilton & Forge Digital</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hamilton & Forge Digital | Weaponised Strategy</title>
+    <style>
+        :root {
+            --apple-black: #000000;
+            --apple-dark: #1d1d1f;
+            --apple-grey: #f5f5f7;
+            --apple-text-grey: #86868b;
+            --gold: #c9a24d;
+            --white: #ffffff;
+            --transition: all 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
+        }
 
-<style>
-/* ------------------ ROOT TOKENS ------------------ */
-:root {
-  --black: #000000;
-  --soft-black: #0b0b0d;
-  --gold: #c9a24d;
-  --gold-soft: rgba(201,162,77,0.18);
-  --grey-bg: #f5f5f7;
-  --text-dark: #1d1d1f;
-  --text-muted: #6e6e73;
-  --radius-xl: 28px;
-  --max-width: 1200px;
-}
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-/* ------------------ RESET ------------------ */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+        body {
+            font-family: "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            background-color: var(--white);
+            color: var(--apple-dark);
+            line-height: 1.1;
+            -webkit-font-smoothing: antialiased;
+        }
 
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
-               "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  background: var(--grey-bg);
-  color: var(--text-dark);
-  line-height: 1.5;
-}
+        /* --- NAVIGATION --- */
+        nav {
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            height: 44px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-/* ------------------ GLOBAL ------------------ */
-section {
-  padding: 6rem 1.5rem;
-}
+        nav a {
+            color: #f5f5f7;
+            text-decoration: none;
+            font-size: 12px;
+            opacity: 0.8;
+            padding: 0 20px;
+        }
 
-.container {
-  max-width: var(--max-width);
-  margin: auto;
-}
+        /* --- HERO SECTION (APPLE STYLE) --- */
+        .hero {
+            background-color: var(--apple-black);
+            color: var(--white);
+            text-align: center;
+            padding-top: 120px;
+            padding-bottom: 60px;
+            overflow: hidden;
+        }
 
-h1 {
-  font-size: clamp(2.8rem, 5vw, 4.5rem);
-  font-weight: 700;
-  letter-spacing: -0.03em;
-}
+        .hero h1 {
+            font-size: clamp(40px, 8vw, 80px);
+            font-weight: 600;
+            letter-spacing: -0.015em;
+            margin-bottom: 10px;
+        }
 
-h2 {
-  font-size: clamp(2rem, 4vw, 3rem);
-  margin-bottom: 1.5rem;
-  letter-spacing: -0.02em;
-}
+        .hero p {
+            font-size: clamp(19px, 3vw, 28px);
+            font-weight: 400;
+            color: var(--white);
+            margin-bottom: 20px;
+        }
 
-p {
-  color: var(--text-muted);
-  font-size: 1.05rem;
-  max-width: 780px;
-}
+        .hero-cta {
+            color: #2997ff;
+            font-size: 21px;
+            text-decoration: none;
+            margin: 0 15px;
+        }
 
-/* ------------------ HERO ------------------ */
-.hero {
-  background: radial-gradient(circle at top, #1a1a1d, #000);
-  color: white;
-  text-align: center;
-  padding: 7rem 1.5rem 8rem;
-}
+        .hero-cta:hover { text-decoration: underline; }
 
-.hero img {
-  width: 160px;
-  margin-bottom: 2rem;
-}
+        .hero-image {
+            margin-top: 50px;
+            width: 100%;
+            max-width: 1000px;
+            border-radius: 30px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        }
 
-.hero span {
-  display: inline-block;
-  margin-top: 1.5rem;
-  color: var(--gold);
-  letter-spacing: 0.18em;
-  font-size: 0.75rem;
-}
+        /* --- SERVICE GRIDS --- */
+        .section-light {
+            background: var(--apple-grey);
+            padding: 80px 20px;
+            text-align: center;
+        }
 
-/* ------------------ FEATURE IMAGE ------------------ */
-.hero-art {
-  margin-top: 4rem;
-}
+        .headline {
+            font-size: clamp(32px, 5vw, 48px);
+            font-weight: 600;
+            margin-bottom: 40px;
+            letter-spacing: -0.01em;
+        }
 
-.hero-art img {
-  width: 100%;
-  max-width: 900px;
-  border-radius: var(--radius-xl);
-  box-shadow: 0 40px 80px rgba(0,0,0,0.45);
-}
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
 
-/* ------------------ ABOUT ------------------ */
-.about {
-  background: white;
-}
+        .grid-item {
+            background: var(--white);
+            padding: 60px 40px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: var(--transition);
+        }
 
-.about-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 3rem;
-  margin-top: 4rem;
-}
+        .grid-item:hover {
+            transform: scale(1.01);
+        }
 
-.about-card {
-  background: var(--grey-bg);
-  border-radius: var(--radius-xl);
-  padding: 2.5rem;
-}
+        .grid-item h3 {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
 
-.about-card h3 {
-  margin-bottom: 0.75rem;
-  color: var(--text-dark);
-}
+        .grid-item p {
+            color: var(--apple-text-grey);
+            font-size: 17px;
+            max-width: 300px;
+            line-height: 1.4;
+        }
 
-/* ------------------ BRAND STATEMENT ------------------ */
-.statement {
-  background: linear-gradient(180deg, #000, #0c0c10);
-  color: white;
-  text-align: center;
-}
+        /* --- WEAPONISED STRATEGY SECTION --- */
+        .impact-section {
+            background: var(--white);
+            padding: 100px 20px;
+            text-align: center;
+        }
 
-.statement h2 {
-  color: white;
-}
+        .impact-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
 
-.statement p {
-  color: #bdbdc2;
-  margin: auto;
-}
+        .impact-content h2 {
+            font-size: 56px;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
 
-/* ------------------ LOGO SHOWCASE ------------------ */
-.logo-showcase {
-  background: var(--grey-bg);
-  text-align: center;
-}
+        .impact-content p {
+            font-size: 24px;
+            color: var(--apple-text-grey);
+            line-height: 1.5;
+            margin-bottom: 40px;
+        }
 
-.logo-showcase img {
-  max-width: 520px;
-  width: 100%;
-}
+        /* --- FOOTER --- */
+        footer {
+            background: var(--apple-grey);
+            padding: 60px 20px;
+            color: var(--apple-text-grey);
+            font-size: 12px;
+            border-top: 1px solid #d2d2d7;
+        }
 
-/* ------------------ FOOTER ------------------ */
-footer {
-  background: white;
-  border-top: 1px solid #e5e5e7;
-  padding: 3rem 1.5rem;
-  font-size: 0.9rem;
-  color: var(--text-muted);
-}
+        .footer-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
 
-footer strong {
-  color: var(--text-dark);
-}
+        .footer-contact {
+            border-bottom: 1px solid #d2d2d7;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
 
-/* ------------------ RESPONSIVE ------------------ */
-@media (max-width: 640px) {
-  section {
-    padding: 4rem 1.25rem;
-  }
-}
-</style>
+        .footer-contact a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        @media (max-width: 734px) {
+            .grid-container { grid-template-columns: 1fr; }
+            .impact-content h2 { font-size: 40px; }
+        }
+    </style>
 </head>
-
 <body>
 
-<!-- HERO -->
+<nav>
+    <a href="#">Hamilton & Forge</a>
+    <a href="#services">Services</a>
+    <a href="#impact">Impact</a>
+    <a href="mailto:admin@hfdigital.co.za">Contact</a>
+</nav>
+
 <section class="hero">
-  <div class="container">
-    <img src="assets/H&F Corporate Logo.jpeg" alt="Hamilton & Forge Digital Logo">
-    <h1>Hamilton & Forge Digital</h1>
-    <span>STRATEGIC • CREATIVE • RESULTS-DRIVEN</span>
-
-    <div class="hero-art">
-      <img src="assets/WhatsApp Image 2025-02-16 at 16.39.13.jpeg" alt="Hamilton & Forge Brand Visual">
+    <div class="container">
+        <p style="color: var(--gold); font-size: 14px; font-weight: 600; letter-spacing: 2px;">STRATEGIC • CREATIVE • RESULTS-DRIVEN</p>
+        <h1>Hamilton & Forge Digital</h1>
+        <p>Engineering campaigns that capture market share.</p>
+        <div>
+            <a href="mailto:admin@hfdigital.co.za" class="hero-cta">Work with us ></a>
+            <a href="#services" class="hero-cta">Our Services ></a>
+        </div>
+        <img src="assets/WhatsApp Image 2025-02-16 at 16.39.13.jpeg" alt="Hamilton & Forge Visual" class="hero-image">
     </div>
-  </div>
 </section>
 
-<!-- ABOUT -->
-<section class="about">
-  <div class="container">
-    <h2>Built to Command Attention</h2>
-    <p>
-      Hamilton & Forge Digital is a full-scope marketing agency focused on authority,
-      precision and sustainable growth. We don’t chase trends — we build legacies.
-    </p>
-
-    <div class="about-grid">
-      <div class="about-card">
-        <h3>Brand Strategy</h3>
-        <p>Positioning that cuts through noise and establishes authority.</p>
-      </div>
-      <div class="about-card">
-        <h3>AI-Driven Growth</h3>
-        <p>Intelligent systems designed to scale revenue efficiently.</p>
-      </div>
-      <div class="about-card">
-        <h3>Full-Funnel Execution</h3>
-        <p>From awareness to conversion — measured, refined, delivered.</p>
-      </div>
+<section class="impact-section" id="impact">
+    <div class="impact-content">
+        <h2>Inspire. Innovate. Impact.</h2>
+        <p>Our strategy isn't theoretical; it's <strong>weaponised</strong>. Our creativity isn't decorative; it's <strong>tactical</strong>. We are your full-service marketing agents, engineering campaigns that do more than capture attention—they multiply revenue.</p>
     </div>
-  </div>
 </section>
 
-<!-- STATEMENT -->
-<section class="statement">
-  <div class="container">
-    <h2>Expire. Innovate. Impact.</h2>
-    <p>
-      Success in today’s market demands more than visibility.
-      It demands authority — built deliberately, executed precisely.
-    </p>
-  </div>
+<section class="section-light" id="services">
+    <h2 class="headline">Precision Engineering for Growth</h2>
+    <div class="grid-container">
+        
+        <div class="grid-item">
+            <h3>Brand Identity</h3>
+            <p>Corporate Identities, Logo Design, and Graphic Design (Traditional & Digital).</p>
+        </div>
+
+        <div class="grid-item">
+            <h3>Social & Meta</h3>
+            <p>Full-scope Social Media Management, Community Growth, and Meta Ad Spend Execution.</p>
+        </div>
+
+        <div class="grid-item">
+            <h3>Search & SEO</h3>
+            <p>Google & Bing SEM and SEO. Strategic thinking turned into search dominance.</p>
+        </div>
+
+        <div class="grid-item">
+            <h3>UI/UX & Tech</h3>
+            <p>Website & Application Design. Tech development that prioritizes user experience.</p>
+        </div>
+
+        <div class="grid-item">
+            <h3>Growth & SEM</h3>
+            <p>Performance Marketing, LinkedIn Management, and Business Incubation.</p>
+        </div>
+
+        <div class="grid-item" style="background: var(--apple-dark); color: white;">
+            <h3 style="color: var(--gold);">Cash Injection</h3>
+            <p style="color: #bdbdc2;">Business incubation and capital strategies for scaling established brands.</p>
+        </div>
+
+    </div>
 </section>
 
-<!-- LOGO -->
-<section class="logo-showcase">
-  <div class="container">
-    <img src="assets/WhatsApp Image 2025-05-10 at 15.13.29.jpeg" alt="Hamilton & Forge Emblem">
-  </div>
+<section class="section-light" style="background: #fff; padding: 40px 0;">
+    <img src="assets/WhatsApp Image 2025-05-10 at 15.13.29.jpeg" alt="H&F Emblem" style="max-width: 300px; opacity: 0.9;">
 </section>
 
-<!-- FOOTER -->
 <footer>
-  <div class="container">
-    <p>
-      <strong>Hamilton & Forge Digital</strong><br>
-      hello@hfdigital.co.za<br>
-      https://hfdigital.co.za
-    </p>
-    <p style="margin-top:1rem;">© 2025 Hamilton & Forge Digital</p>
-  </div>
+    <div class="footer-container">
+        <div class="footer-contact">
+            <div>
+                <strong>Hamilton & Forge Digital</strong><br>
+                <a href="mailto:admin@hfdigital.co.za">admin@hfdigital.co.za</a>
+            </div>
+            <div>
+                <a href="https://hfdigital.co.za">hfdigital.co.za</a>
+            </div>
+        </div>
+        <p>Copyright © 2025 Hamilton & Forge Digital. All rights reserved. Our pursuit of results is relentless.</p>
+    </div>
 </footer>
 
 </body>
