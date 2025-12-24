@@ -1,0 +1,25 @@
+/* Base image reset */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Image container for consistent layout */
+.image-wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Responsive grid for multiple images */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+/* Rounded and clean presentation */
+.image-grid img {
+  border-radius: 8px;
+  object-fit: cover;
+}
