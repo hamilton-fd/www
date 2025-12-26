@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamilton & Forge Digital | 2025 Strategic Architecture</title>
+    <style>
+        :root {
+            --gold: #c5a059;
+            --dark-bg: #0a0a0a;
+            --card-bg: #161616;
+            --text-gray: #a0a0a0;
+            --white: #ffffff;
+            --ms-blue: #00a4ef;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--white);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        header {
+            text-align: left;
+            border-bottom: 1px solid #333;
+            padding-bottom: 30px;
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            letter-spacing: -1px;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .tagline {
+            color: var(--gold);
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+
+        /* Value Prop Banner */
+        .value-prop {
+            font-size: 1.4rem;
+            font-weight: 300;
+            color: var(--white);
+            margin-bottom: 50px;
+            border-left: 3px solid var(--gold);
+            padding-left: 30px;
+        }
+
+        /* High-Ticket Microsoft Section */
+        .ms-pillar {
+            background: linear-gradient(145deg, #1a1a1a 0%, #0d0d0d 100%);
+            border: 1px solid #333;
+            padding: 40px;
+            border-radius: 4px;
+            margin-bottom: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ms-pillar::before {
+            content: "PRIMARY GROWTH FOUNDATION";
+            position: absolute;
+            top: 20px;
+            right: -40px;
+            background: var(--gold);
+            color: #000;
+            padding: 5px 50px;
+            font-size: 0.7rem;
+            font-weight: bold;
+            transform: rotate(45deg);
+        }
+
+        h2 {
+            color: var(--gold);
+            text-transform: uppercase;
+            font-size: 1.8rem;
+            margin-top: 0;
+        }
+
+        .discount-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .discount-card {
+            background: rgba(255,255,255,0.03);
+            padding: 20px;
+            border: 1px dashed #444;
+        }
+
+        .percentage {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--white);
+            display: block;
+        }
+
+        /* Other Services List */
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+        }
+
+        .service-category {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 4px;
+        }
+
+        .service-category h3 {
+            font-size: 1rem;
+            color: var(--gold);
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+        }
+
+        .service-category ul {
+            list-style: none;
+            padding: 0;
+            font-size: 0.85rem;
+            color: var(--text-gray);
+        }
+
+        .service-category li {
+            margin-bottom: 8px;
+        }
+
+        footer {
+            margin-top: 80px;
+            padding-top: 30px;
+            border-top: 1px solid #333;
+            text-align: center;
+        }
+
+        .cta-btn {
+            background: var(--gold);
+            color: black;
+            padding: 15px 40px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 768px) {
+            .services-grid, .discount-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="tagline">Hamilton & Forge Digital | 2026 Scale Strategy</div>
+        <h1>Architecting Market Dominance</h1>
+    </header>
+
+    <div class="value-prop">
+        The speed of business today is dictated by the efficiency of your stack. 
+        As a recognised <strong>Global Microsoft Partner</strong>, we provide the architectural foundation for scale.
+    </div>
+
+    <section class="ms-pillar">
+        <h2>Strategic Software Solutions</h2>
+        <p>Strategic window to upgrade infrastructure from legacy systems to AI-ready environments at a fraction of retail costs.</p>
+        
+        <div class="discount-grid">
+            <div class="discount-card">
+                <span class="percentage">30% OFF</span>
+                <strong>Global Ecosystem</strong>
+                <p style="font-size: 0.8rem; color: var(--text-gray);">Exclusive partner discount across the Microsoft stack for streamlined scaling.</p>
+            </div>
+            <div class="discount-card">
+                <span class="percentage">40% OFF</span>
+                <strong>High-Volume Infrastructure</strong>
+                <p style="font-size: 0.8rem; color: var(--text-gray);">Windows Server 2025 & SQL Server 2022. 50+ Licences (POA).</p>
+            </div>
+        </div>
+
+        <div style="font-size: 0.9rem; color: var(--text-gray); display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+            <div>• Full MCA Regulatory Compliance</div>
+            <div>• Direct Microsoft Support Access</div>
+            <div>• Advanced Threat Protection</div>
+            <div>• Immediate Tenant Deployment</div>
+        </div>
+    </section>
+
+    <h2 style="font-size: 1.2rem; letter-spacing: 2px; margin-bottom: 25px;">Ecosystem Service Offerings</h2>
+    <div class="services-grid">
+        <div class="service-category">
+            <h3>Identity & Brand</h3>
+            <ul>
+                <li>Logo Design & Brand Building</li>
+                <li>Corporate Identity Creation</li>
+                <li>Digital & Traditional Graphics</li>
+                <li>Custom Digital Business Cards</li>
+            </ul>
+        </div>
+
+        <div class="service-category">
+            <h3>Performance Media</h3>
+            <ul>
+                <li>Meta (IG/FB) Spend & Management</li>
+                <li>Google & Bing Search Marketing</li>
+                <li>LinkedIn Ad Strategy</li>
+                <li>Community Building & Mgmt</li>
+            </ul>
+        </div>
+
+        <div class="service-category">
+            <h3>Development & SEO</h3>
+            <ul>
+                <li>Full Website & App Design</li>
+                <li>UX / UI Strategic Design</li>
+                <li>Technology Development</li>
+                <li>Search Engine Optimization</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p><strong>REACH THE FOUNDER:</strong> John Lewis | john@thrivelinelegacy.com | +27 72 587 1816</p>
+        <a href="mailto:john@thrivelinelegacy.com" class="cta-btn">Lock in Exclusive Rates</a>
+        <p style="margin-top: 20px; font-size: 0.7rem; color: #555;">ZAR Anchor: R18.50 | All deployments governed by Microsoft Customer Agreement (MCA)</p>
+    </footer>
+</div>
+
+</body>
+</html>
