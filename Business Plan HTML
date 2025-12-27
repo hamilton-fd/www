@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamilton & Forge Digital | 2025 Strategic Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+        }
+
+        .gold-gradient {
+            background: linear-gradient(90deg, #d4af37 0%, #f97316 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .border-gold { border-color: #d4af37; }
+        .bg-gold { background-color: #d4af37; }
+
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .motto-glow {
+            text-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <header class="max-w-5xl mx-auto text-center mb-12">
+        <h1 class="text-4xl md:text-6xl font-bold tracking-tighter mb-4">
+            HAMILTON & FORGE <span class="gold-gradient">DIGITAL</span>
+        </h1>
+        <p class="text-xl text-slate-400 font-light italic motto-glow">"We Fly Close to the Sun"</p>
+        <div class="mt-8 inline-block px-6 py-2 border-y border-gold text-sm tracking-widest uppercase">
+            2025 Strategic Profile | North Star: $1M Revenue by Dec 2026
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto space-y-8">
+        
+        <section class="glass-card p-8 rounded-2xl">
+            <h2 class="text-2xl font-bold mb-4 text-orange-400 uppercase tracking-wide">The Value Proposition</h2>
+            <p class="text-lg leading-relaxed text-slate-300">
+                As a recognized <span class="text-white font-semibold">Global Microsoft Partner</span>, we deliver the architectural foundation for scale. 
+                In a market where efficiency dictates survival, we engineer dominance through precise strategy and relentless execution.
+            </p>
+            <div class="grid md:grid-cols-3 gap-6 mt-6">
+                <div class="p-4 border-l-2 border-gold bg-slate-800/50">
+                    <p class="text-xs uppercase text-slate-500 mb-1 font-bold">Authority</p>
+                    <p class="text-sm italic">"Change without authority is irrelevant."</p>
+                </div>
+                <div class="p-4 border-l-2 border-gold bg-slate-800/50">
+                    <p class="text-xs uppercase text-slate-500 mb-1 font-bold">Conversion</p>
+                    <p class="text-sm italic">"Engagement without conversion is vanity."</p>
+                </div>
+                <div class="p-4 border-l-2 border-gold bg-slate-800/50">
+                    <p class="text-xs uppercase text-slate-500 mb-1 font-bold">Execution</p>
+                    <p class="text-sm italic">"Strategy without execution is guesswork."</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <section class="glass-card p-8 rounded-2xl border-l-4 border-blue-500">
+                <h2 class="text-xl font-bold mb-4 flex items-center">
+                    <span class="mr-2">💻</span> Primary Infrastructure
+                </h2>
+                <ul class="space-y-4 text-sm">
+                    <li class="flex justify-between">
+                        <span class="text-slate-400">Microsoft Ecosystem</span>
+                        <span class="text-green-400 font-bold">30% Discount</span>
+                    </li>
+                    <li class="flex justify-between border-b border-slate-700 pb-2">
+                        <span class="text-slate-400">Enterprise Server (50+ Licenses)</span>
+                        <span class="text-green-400 font-bold">40% Discount</span>
+                    </li>
+                </ul>
+                <p class="mt-4 text-xs text-slate-500 leading-relaxed">
+                    Streamlined under the <strong>Microsoft Customer Agreement (MCA)</strong>. All pricing anchored to USD ($1 = R18.50 baseline) for global parity. Immediate deployment via Tenant Admin Centre.
+                </p>
+            </section>
+
+            <section class="glass-card p-8 rounded-2xl border-l-4 border-gold">
+                <h2 class="text-xl font-bold mb-4 flex items-center">
+                    <span class="mr-2">🚀</span> Market Dominance
+                </h2>
+                <div class="space-y-3 text-sm">
+                    <div>
+                        <span class="text-orange-400 font-semibold uppercase text-xs">Identity Engineering</span>
+                        <p class="text-slate-400">Brand Creation, UI/UX Design, Digital Business Cards.</p>
+                    </div>
+                    <div>
+                        <span class="text-orange-400 font-semibold uppercase text-xs">Performance Media</span>
+                        <p class="text-slate-400">Meta, Google, Bing & LinkedIn Ads Management.</p>
+                    </div>
+                    <div>
+                        <span class="text-orange-400 font-semibold uppercase text-xs">Tech & Growth</span>
+                        <p class="text-slate-400">Custom Dev, SEO, Business Incubation & Cash Injection.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="bg-gradient-to-r from-slate-800 to-slate-900 border border-gold/30 p-8 rounded-2xl">
+            <h2 class="text-xl font-bold mb-2 gold-gradient uppercase">High-Value Digital Marketing Online Courses</h2>
+            <p class="text-slate-300 mb-4 italic text-sm">"Master the skills that guarantee profit."</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+                <div class="text-center p-2 bg-slate-900 rounded border border-slate-700 text-xs">Web Scraping</div>
+                <div class="text-center p-2 bg-slate-900 rounded border border-slate-700 text-xs">Lead Generation</div>
+                <div class="text-center p-2 bg-slate-900 rounded border border-slate-700 text-xs">AI Automation</div>
+                <div class="text-center p-2 bg-slate-900 rounded border border-slate-700 text-xs">Scale Blueprint</div>
+            </div>
+            <a href="#" class="text-gold font-semibold text-sm hover:underline">Hit the link for the Freedom Formula Blueprint →</a>
+        </section>
+
+        <section class="glass-card p-8 rounded-2xl">
+            <h2 class="text-2xl font-bold mb-6 text-center uppercase">Strategic Logic for 2026 Scale</h2>
+            <div class="grid md:grid-cols-4 gap-4 text-center">
+                <div class="p-4 bg-slate-800/30 rounded-xl">
+                    <div class="text-2xl mb-2 text-gold font-bold">01</div>
+                    <p class="text-xs font-semibold uppercase mb-2 text-slate-200">Foundation</p>
+                    <p class="text-[10px] text-slate-400">Lock in Enterprise clients via Microsoft licensing volume.</p>
+                </div>
+                <div class="p-4 bg-slate-800/30 rounded-xl">
+                    <div class="text-2xl mb-2 text-gold font-bold">02</div>
+                    <p class="text-xs font-semibold uppercase mb-2 text-slate-200">Compliance</p>
+                    <p class="text-[10px] text-slate-400">MCA framework removes legal friction in the sales cycle.</p>
+                </div>
+                <div class="p-4 bg-slate-800/30 rounded-xl">
+                    <div class="text-2xl mb-2 text-gold font-bold">03</div>
+                    <p class="text-xs font-semibold uppercase mb-2 text-slate-200">Cross-Sell</p>
+                    <p class="text-[10px] text-slate-400">Transition infrastructure users to Market Dominance retainers.</p>
+                </div>
+                <div class="p-4 bg-slate-800/30 rounded-xl">
+                    <div class="text-2xl mb-2 text-gold font-bold">04</div>
+                    <p class="text-xs font-semibold uppercase mb-2 text-slate-200">ROI</p>
+                    <p class="text-[10px] text-slate-400">Utilize 30-40% partner discounts for unbeatable client value.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center py-12 space-y-6">
+            <h2 class="text-2xl font-bold">Ready to accelerate your growth?</h2>
+            <a href="mailto:john@thrivelinelegacy.com" class="inline-block bg-white text-black font-bold px-8 py-4 rounded-full hover:bg-gold hover:text-white transition-all transform hover:scale-105">
+                SCHEDULE YOUR DISCOVERY CALL NOW
+            </a>
+            <div class="pt-8 text-slate-400 text-sm">
+                <p class="font-bold text-slate-200">John Lewis – Hamilton & Forge Digital</p>
+                <p>Email: john@thrivelinelegacy.com | Phone: +27 72 587 1816</p>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
